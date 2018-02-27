@@ -1,0 +1,135 @@
+﻿빌드 시작: 2016-12-15 오후 4:38:31
+     1>2 노드의 "C:\Users\User\Desktop\Code\jym_161212\KUNS.vcxproj" 프로젝트(build 대상)입니다.
+     1>InitializeBuildStatus:
+         "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\KUNS.unsuccessfulbuild"을(를) 만들고 있습니다.
+       ClCompile:
+         모든 출력이 최신 상태입니다.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I./extrainclude /I./extrainclude/newmat /I./extrainclude/mswu /I./extrainclude/include /I./extrainclude/opencv /I./extrainclude/sensor/kinect /I./extrainclude/sensor/gyro /I./extrainclude/sensor/laser /I./extrainclude/sensor/wheelActuatorInterface/Aria /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\KUNS.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt src\KUNSProcess\KUNSLocalPathPlnnerPr\KuLocalPathPlannerPr.cpp
+         KuLocalPathPlannerPr.cpp
+     1>c:\users\user\desktop\code\jym_161212\extrainclude\include\opencv2\flann\dist.h : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+     1>c:\users\user\desktop\code\jym_161212\extrainclude\include\opencv2\flann\dist.h : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+     1>c:\users\user\desktop\code\jym_161212\extrainclude\include\opencv2\flann\dist.h : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+     1>c:\users\user\desktop\code\jym_161212\extrainclude\include\opencv2\flann\dist.h : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+     1>c:\users\user\desktop\code\jym_161212\extrainclude\include\opencv2\stitching\detail\motion_estimators.hpp : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsmath\kumath.h(13): warning C4005: 'M_PI' : 매크로 재정의
+                 c:\users\user\desktop\code\jym_161212\extrainclude\sensor\wheelactuatorinterface\aria\ariautil.h(64) : 'M_PI'의 이전 정의를 참조하십시오.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsutil\kunsthread\kuthread.h(17): warning C4005: '_AFXDLL' : 매크로 재정의
+                 명령줄 인수 :  '_AFXDLL'의 이전 정의를 참조하십시오.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(10): warning C4305: '인수' : 'double'에서 'float'(으)로 잘립니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(153): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(378): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(382): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(400): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(410): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(412): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(453): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(472): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(573): warning C4018: '>=' : signed 또는 unsigned가 일치하지 않습니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(907): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(1132): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(1450): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(1458): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(1546): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(1626): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(1631): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(1661): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(1679): warning C4305: '-=' : 'double'에서 'float'(으)로 잘립니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(1679): warning C4305: '+=' : 'double'에서 'float'(으)로 잘립니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(1681): warning C4305: '-=' : 'double'에서 'float'(으)로 잘립니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(1681): warning C4305: '+=' : 'double'에서 'float'(으)로 잘립니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(1683): warning C4305: '-=' : 'double'에서 'float'(으)로 잘립니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(1683): warning C4305: '+=' : 'double'에서 'float'(으)로 잘립니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(1685): warning C4305: '-=' : 'double'에서 'float'(으)로 잘립니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(1685): warning C4305: '+=' : 'double'에서 'float'(으)로 잘립니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(1691): warning C4305: '-=' : 'double'에서 'float'(으)로 잘립니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(1692): warning C4305: '+=' : 'double'에서 'float'(으)로 잘립니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(1693): warning C4305: '-=' : 'double'에서 'float'(으)로 잘립니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(1694): warning C4305: '+=' : 'double'에서 'float'(으)로 잘립니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(1728): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(1809): warning C4018: '>=' : signed 또는 unsigned가 일치하지 않습니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(1979): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(2023): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>c:\users\user\desktop\code\jym_161212\src\kunsprocess\kunslocalpathplnnerpr\kulocalpathplannerpr.cpp(1538): warning C4715: 'KuLocalPathPlannerPr::start' : 모든 제어 경로에서 값을 반환하지는 않습니다.
+       ResourceCompile:
+         모든 출력이 최신 상태입니다.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\User\Desktop\Code\jym_161212\Debug\KUNS.exe" /INCREMENTAL /NOLOGO /LIBPATH:./lib/Debug /LIBPATH:./extralibs/win32/opencv/Debug /LIBPATH:./extralibs/win32/sensor/gyro/Debug /LIBPATH:./extralibs/win32/sensor/kinect /LIBPATH:./extralibs/win32/sensor/laser/Debug /LIBPATH:./extralibs/win32/glut /LIBPATH:./extralibs/win32/newmat/Debug /LIBPATH:./extralibs/win32/sensor/wheelActuatorInterface /LIBPATH:./extralibs opencv_core240d.lib opencv_highgui240d.lib opencv_ml240d.lib opencv_video240d.lib opencv_flann240d.lib opencv_imgproc240d.lib opencv_objdetect240d.lib opencv_photo240d.lib opencv_nonfree240d.lib opencv_features2d240d.lib opencv_calib3d240d.lib opencv_legacy240d.lib opencv_contrib240d.lib opencv_stitching240d.lib opencv_videostab240d.lib openNI.lib urgd.lib glfwVC6d.lib glut32.lib newmat10d.lib GLAUX.LIB AriaDebugVC10.lib /MANIFEST /ManifestFile:"Debug\KUNS.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\User\Desktop\Code\jym_161212\Debug\KUNS.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\User\Desktop\Code\jym_161212\Debug\KUNS.lib" /MACHINE:X86 Debug\KUNS.res
+         Debug\KUNS.obj
+         Debug\KUNSDlg.obj
+         Debug\KuICP.obj
+         Debug\LaserBasedParticleFilter.obj
+         Debug\GotoGoalBehavior.obj
+         Debug\MapBuildingBehavior.obj
+         Debug\KuVrKanayaMotionControlBh.obj
+         Debug\KuDrawingInfo.obj
+         Debug\KUNSUI3DDlg.obj
+         Debug\KuMap.obj
+         Debug\KuMapRepository.obj
+         Debug\KuMath.obj
+         Debug\KuPose.obj
+         Debug\KuElevatorPr.obj
+         Debug\KuICPLocalizerPr.obj
+         Debug\KuLBPFLocalizerPr.obj
+         Debug\KuBuildingPOMapParameter.obj
+         Debug\KuBuildingPOMapPr.obj
+         Debug\KuCombiningPOMapPr.obj
+         Debug\KuDWAPr.obj
+         Debug\KuKanayamaMotionControlPr.obj
+         Debug\KuLaserMapBuilderPr.obj
+         Debug\KuMapBuilderParameter.obj
+         Debug\Ctracker.obj
+         Debug\HungarianAlg.obj
+         Debug\Kalman.obj
+         Debug\KuGradientPathPlannerbasedPIPr.obj
+         Debug\KuKalman.obj
+         Debug\KuLocalPathPlannerPr.obj
+         Debug\KuTracker.obj
+         Debug\KuObstAvoidancePr.obj
+         Debug\KuGlobalParhPlannerPr.obj
+         Debug\KuGradientPathPlannerbasedPOMapPr.obj
+         Debug\KuGradientPathPlannerbasedSafeLinePr.obj
+         Debug\KuGradientPathPlannerPr.obj
+         Debug\KuPathSmoothingPr.obj
+         Debug\KuVFHPlusPr.obj
+         Debug\LocalMap.obj
+         Debug\VFHPlus.obj
+         Debug\KuSimulLocalizer.obj
+         Debug\KuSimulMotionControllerPr.obj
+         Debug\KuVrRangeInterface.obj
+         Debug\KuWanderingObstaclePr.obj
+         Debug\KuCriticalSection.obj
+         Debug\ini.obj
+         Debug\KuINIReadWriter.obj
+         Debug\KuSerialComm.obj
+         Debug\KuStandby.obj
+         Debug\KuThread.obj
+         Debug\KuTimer.obj
+         Debug\KuUtil.obj
+         Debug\KuCommandMessage.obj
+         Debug\KuPOIMapParameter.obj
+         Debug\KuRobotParameter.obj
+         Debug\MobileSupervisor.obj
+         Debug\HokuyoURG04LXInterface.obj
+         Debug\KinectSensorInterface.obj
+         Debug\net_serial.obj
+         Debug\RplidarInterface.obj
+         Debug\RPLidarProxy.obj
+         Debug\rplidar_driver.obj
+         Debug\thread.obj
+         Debug\timer.obj
+         Debug\SensorSupervisor.obj
+         Debug\KuVrHokuyoUTM30LXInterface.obj
+         Debug\KuVrWheelActuatorInterface.obj
+         Debug\PioneerWheelActuatorInterface.obj
+         Debug\stdafx.obj
+         KUNS.vcxproj -> C:\Users\User\Desktop\Code\jym_161212\Debug\KUNS.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"C:\Users\User\Desktop\Code\jym_161212\Debug\KUNS.exe.manifest" /manifest Debug\KUNS.exe.intermediate.manifest "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+       FinalizeBuildStatus:
+         "Debug\KUNS.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+         "Debug\KUNS.lastbuildstate"에 연결(touching)하고 있습니다.
+     1>"C:\Users\User\Desktop\Code\jym_161212\KUNS.vcxproj" 프로젝트를 빌드했습니다(build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:04.45

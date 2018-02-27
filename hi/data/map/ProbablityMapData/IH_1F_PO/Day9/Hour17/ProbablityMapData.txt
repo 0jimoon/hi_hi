@@ -1,0 +1,4 @@
+[PATH]
+DATANUMBER=1
+
+PATH&NAME1=./data/map/ProbablityMapData/IH_1F_PO/Day9/Hour17/Map1.txt

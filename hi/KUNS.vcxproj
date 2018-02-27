@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6C0CFFAF-BA2E-407A-9C22-71A3D120021A}</ProjectGuid>
+    <RootNamespace>KUNS</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;C:\Program Files %28x86%29\Visual Leak Detector\include</IncludePath>
+    <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;C:\Program Files %28x86%29\Visual Leak Detector\lib\Win32</LibraryPath>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./extrainclude;./extrainclude/newmat;./extrainclude/mswu;./extrainclude/include;./extrainclude/opencv;./extrainclude/sensor/kinect;./extrainclude/sensor/gyro;./extrainclude/sensor/laser;./extrainclude/sensor/wheelActuatorInterface/Aria;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_core240d.lib;opencv_highgui240d.lib;opencv_ml240d.lib		;opencv_video240d.lib	;opencv_flann240d.lib;opencv_imgproc240d.lib;opencv_objdetect240d.lib;opencv_photo240d.lib;opencv_nonfree240d.lib;opencv_features2d240d.lib;opencv_calib3d240d.lib;opencv_legacy240d.lib;opencv_contrib240d.lib;opencv_stitching240d.lib;opencv_videostab240d.lib;openNI.lib;urgd.lib;glfwVC6d.lib;glut32.lib;newmat10d.lib;GLAUX.LIB;AriaDebugVC10.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>./lib/Debug;./extralibs/win32/opencv/Debug;./extralibs/win32/sensor/gyro/Debug;./extralibs/win32/sensor/kinect;./extralibs/win32/sensor/laser/Debug;./extralibs/win32/glut;./extralibs/win32/newmat/Debug;./extralibs/win32/sensor/wheelActuatorInterface;./extralibs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./extrainclude;./extrainclude/newmat;./extrainclude/mswu;./extrainclude/include;./extrainclude/opencv;./extrainclude/sensor/kinect;./extrainclude/sensor/gyro;./extrainclude/sensor/laser;./extrainclude/sensor/wheelActuatorInterface/Aria;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>./lib/Release;./extralibs/win32/opencv/Release;./extralibs/win32/sensor/gyro/Release;./extralibs/win32/sensor/kinect;./extralibs/win32/sensor/laser/Release;./extralibs/win32/glut;./extralibs/win32/newmat/Release;./extralibs/win32/sensor/wheelActuatorInterface;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_core240.lib;opencv_highgui240.lib;opencv_ml240.lib;opencv_video240.lib;opencv_flann240.lib;opencv_imgproc240.lib;opencv_objdetect240.lib;opencv_photo240.lib;opencv_nonfree240.lib;opencv_features2d240.lib;opencv_calib3d240.lib;opencv_legacy240.lib;opencv_contrib240.lib;opencv_stitching240.lib;opencv_videostab240.lib;openNI.lib;urg.lib;glfwVC6.lib;glut32.lib;newmat10.lib;GLAUX.LIB;AriaVC10.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ini\KUNS.ini" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\KUNS.ico" />
+    <None Include="res\KUNS.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="KUNS.h" />
+    <ClInclude Include="KUNSDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="src\Algorithm\KuICP\KuICP.h" />
+    <ClInclude Include="src\Algorithm\ParticleFilter\LaserBasedParticleFilter.h" />
+    <ClInclude Include="src\Algorithm\ParticleFilter\Sample.h" />
+    <ClInclude Include="src\KUNSBehavior\GotoGoalBehavior\GotoGoalBehavior.h" />
+    <ClInclude Include="src\KUNSBehavior\MapBuildingBehavior\MapBuildingBehavior.h" />
+    <ClInclude Include="src\KUNSBehavior\VirtualBehavior\KuVrKanayaMotionControlBh.h" />
+    <ClInclude Include="src\KUNSGUI\KuDrawingInfo.h" />
+    <ClInclude Include="src\KUNSGUI\KUNSUI3DDlg.h" />
+    <ClInclude Include="src\KUNSMap\KuMap.h" />
+    <ClInclude Include="src\KUNSMap\KuMapRepository.h" />
+    <ClInclude Include="src\KUNSMath\KuMath.h" />
+    <ClInclude Include="src\KUNSPose\KuPose.h" />
+    <ClInclude Include="src\KUNSProcess\KuElevatorPr\KuElevatorPr.h" />
+    <ClInclude Include="src\KUNSProcess\KuICPLocalizerPr\KuICPLocalizerPr.h" />
+    <ClInclude Include="src\KUNSProcess\KuLaserBasedParticleFilterLocalizerPr\KuLBPFLocalizerPr.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSBuildingPOMapPr\KuBuildingPOMapParameter.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSBuildingPOMapPr\KuBuildingPOMapPr.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSCombiningPOMapPr\KuCombiningPOMapPr.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSDWAMotionControlPr\KuDWAPr.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSKanayamaMotionControlPr\KuKanayamaMotionControlPr.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSLaserMapBuilderPr\KuLaserMapBuilderPr.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSLaserMapBuilderPr\KuMapBuilderParameter.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\Ctracker.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\HungarianAlg.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\Kalman.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\KuGradientPathPlannerbasedPIPr.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\KuKalman.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\KuLocalPathPlannerPr.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\KuTracker.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\KuTrajectory.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSObstAvoidancePr\KuObstAvoidancePr.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSPathPlannerPr\KuGlobalParhPlannerPr.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSPathPlannerPr\KuGradientPathPlannerbasedPOMapPr.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSPathPlannerPr\KuGradientPathPlannerbasedSafeLinePr.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSPathPlannerPr\KuGradientPathPlannerPr.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSPathPlannerPr\KuPathSmoothingPr.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSVFHPlusPr\KuVFHPlusPr.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSVFHPlusPr\LocalMap.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSVFHPlusPr\mm.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSVFHPlusPr\VFHPlus.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSWanderingObstaclePr\KuSimulLocalizer.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSWanderingObstaclePr\KuSimulMotionControllerPr.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSWanderingObstaclePr\KuVrRangeInterface.h" />
+    <ClInclude Include="src\KUNSProcess\KUNSWanderingObstaclePr\KuWanderingObstaclePr.h" />
+    <ClInclude Include="src\KUNSUtil\KUNSCriticalSection\KuCriticalSection.h" />
+    <ClInclude Include="src\KUNSUtil\KUNSINIReadWriter\ini.h" />
+    <ClInclude Include="src\KUNSUtil\KUNSINIReadWriter\KuINIReadWriter.h" />
+    <ClInclude Include="src\KUNSUtil\KUNSSerialComm\KuSerialComm.h" />
+    <ClInclude Include="src\KUNSUtil\KUNSSingletone\KuSingletone.h" />
+    <ClInclude Include="src\KUNSUtil\KUNSStandby\KuStandby.h" />
+    <ClInclude Include="src\KUNSUtil\KUNSThread\KuThread.h" />
+    <ClInclude Include="src\KUNSUtil\KUNSTimer\KuTimer.h" />
+    <ClInclude Include="src\KUNSUtil\KuUtil.h" />
+    <ClInclude Include="src\Localizer\Localizer.h" />
+    <ClInclude Include="src\MobileSupervisor\KuCommandMessage.h" />
+    <ClInclude Include="src\MobileSupervisor\KuPOIMapParameter.h" />
+    <ClInclude Include="src\MobileSupervisor\KuRobotParameter.h" />
+    <ClInclude Include="src\MobileSupervisor\MobileSupervisor.h" />
+    <ClInclude Include="src\Sensor\HokuyoURG04LXInterface\HokuyoURG04LXInterface.h" />
+    <ClInclude Include="src\Sensor\KinectSensorInterface\KinectSensorInterface.h" />
+    <ClInclude Include="src\Sensor\RplidarInterface\arch\win32\arch_win32.h" />
+    <ClInclude Include="src\Sensor\RplidarInterface\arch\win32\net_serial.h" />
+    <ClInclude Include="src\Sensor\RplidarInterface\arch\win32\timer.h" />
+    <ClInclude Include="src\Sensor\RplidarInterface\arch\win32\winthread.hpp" />
+    <ClInclude Include="src\Sensor\RplidarInterface\hal\abs_rxtx.h" />
+    <ClInclude Include="src\Sensor\RplidarInterface\hal\event.h" />
+    <ClInclude Include="src\Sensor\RplidarInterface\hal\locker.h" />
+    <ClInclude Include="src\Sensor\RplidarInterface\hal\thread.h" />
+    <ClInclude Include="src\Sensor\RplidarInterface\hal\util.h" />
+    <ClInclude Include="src\Sensor\RplidarInterface\net_serial.h" />
+    <ClInclude Include="src\Sensor\RplidarInterface\rplidar.h" />
+    <ClInclude Include="src\Sensor\RplidarInterface\RPLidarData.h" />
+    <ClInclude Include="src\Sensor\RplidarInterface\RplidarInterface.h" />
+    <ClInclude Include="src\Sensor\RplidarInterface\RPLidarProxy.h" />
+    <ClInclude Include="src\Sensor\RplidarInterface\rplidar_cmd.h" />
+    <ClInclude Include="src\Sensor\RplidarInterface\rplidar_driver.h" />
+    <ClInclude Include="src\Sensor\RplidarInterface\rplidar_driver_serial.h" />
+    <ClInclude Include="src\Sensor\RplidarInterface\rplidar_protocol.h" />
+    <ClInclude Include="src\Sensor\RplidarInterface\rptypes.h" />
+    <ClInclude Include="src\Sensor\RplidarInterface\sdkcommon.h" />
+    <ClInclude Include="src\Sensor\Sensor.h" />
+    <ClInclude Include="src\Sensor\SensorSupervisor.h" />
+    <ClInclude Include="src\Sensor\VirtualSensor\KuVrHokuyoUTM30LXInterface.h" />
+    <ClInclude Include="src\Sensor\VirtualSensor\KuVrWheelActuatorInterface.h" />
+    <ClInclude Include="src\Sensor\WheelActuatorInterface\PioneerWheelActuatorInterface.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="KUNS.cpp" />
+    <ClCompile Include="KUNSDlg.cpp" />
+    <ClCompile Include="src\Algorithm\KuICP\KuICP.cpp" />
+    <ClCompile Include="src\Algorithm\ParticleFilter\LaserBasedParticleFilter.cpp" />
+    <ClCompile Include="src\KUNSBehavior\GotoGoalBehavior\GotoGoalBehavior.cpp" />
+    <ClCompile Include="src\KUNSBehavior\MapBuildingBehavior\MapBuildingBehavior.cpp" />
+    <ClCompile Include="src\KUNSBehavior\VirtualBehavior\KuVrKanayaMotionControlBh.cpp" />
+    <ClCompile Include="src\KUNSGUI\KuDrawingInfo.cpp" />
+    <ClCompile Include="src\KUNSGUI\KUNSUI3DDlg.cpp" />
+    <ClCompile Include="src\KUNSMap\KuMap.cpp" />
+    <ClCompile Include="src\KUNSMap\KuMapRepository.cpp" />
+    <ClCompile Include="src\KUNSMath\KuMath.cpp" />
+    <ClCompile Include="src\KUNSPose\KuPose.cpp" />
+    <ClCompile Include="src\KUNSProcess\KuElevatorPr\KuElevatorPr.cpp" />
+    <ClCompile Include="src\KUNSProcess\KuICPLocalizerPr\KuICPLocalizerPr.cpp" />
+    <ClCompile Include="src\KUNSProcess\KuLaserBasedParticleFilterLocalizerPr\KuLBPFLocalizerPr.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSBuildingPOMapPr\KuBuildingPOMapParameter.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSBuildingPOMapPr\KuBuildingPOMapPr.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSCombiningPOMapPr\KuCombiningPOMapPr.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSDWAMotionControlPr\KuDWAPr.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSKanayamaMotionControlPr\KuKanayamaMotionControlPr.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSLaserMapBuilderPr\KuLaserMapBuilderPr.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSLaserMapBuilderPr\KuMapBuilderParameter.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\Ctracker.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\HungarianAlg.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\Kalman.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\KuGradientPathPlannerbasedPIPr.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\KuKalman.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\KuLocalPathPlannerPr.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\KuTracker.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSObstAvoidancePr\KuObstAvoidancePr.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSPathPlannerPr\KuGlobalParhPlannerPr.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSPathPlannerPr\KuGradientPathPlannerbasedPOMapPr.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSPathPlannerPr\KuGradientPathPlannerbasedSafeLinePr.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSPathPlannerPr\KuGradientPathPlannerPr.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSPathPlannerPr\KuPathSmoothingPr.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSVFHPlusPr\KuVFHPlusPr.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSVFHPlusPr\LocalMap.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSVFHPlusPr\VFHPlus.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSWanderingObstaclePr\KuSimulLocalizer.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSWanderingObstaclePr\KuSimulMotionControllerPr.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSWanderingObstaclePr\KuVrRangeInterface.cpp" />
+    <ClCompile Include="src\KUNSProcess\KUNSWanderingObstaclePr\KuWanderingObstaclePr.cpp" />
+    <ClCompile Include="src\KUNSUtil\KUNSCriticalSection\KuCriticalSection.cpp" />
+    <ClCompile Include="src\KUNSUtil\KUNSINIReadWriter\ini.cpp" />
+    <ClCompile Include="src\KUNSUtil\KUNSINIReadWriter\KuINIReadWriter.cpp" />
+    <ClCompile Include="src\KUNSUtil\KUNSSerialComm\KuSerialComm.cpp" />
+    <ClCompile Include="src\KUNSUtil\KUNSStandby\KuStandby.cpp" />
+    <ClCompile Include="src\KUNSUtil\KUNSThread\KuThread.cpp" />
+    <ClCompile Include="src\KUNSUtil\KUNSTimer\KuTimer.cpp" />
+    <ClCompile Include="src\KUNSUtil\KuUtil.cpp" />
+    <ClCompile Include="src\MobileSupervisor\KuCommandMessage.cpp" />
+    <ClCompile Include="src\MobileSupervisor\KuPOIMapParameter.cpp" />
+    <ClCompile Include="src\MobileSupervisor\KuRobotParameter.cpp" />
+    <ClCompile Include="src\MobileSupervisor\MobileSupervisor.cpp" />
+    <ClCompile Include="src\Sensor\HokuyoURG04LXInterface\HokuyoURG04LXInterface.cpp" />
+    <ClCompile Include="src\Sensor\KinectSensorInterface\KinectSensorInterface.cpp" />
+    <ClCompile Include="src\Sensor\RplidarInterface\net_serial.cpp" />
+    <ClCompile Include="src\Sensor\RplidarInterface\RplidarInterface.cpp" />
+    <ClCompile Include="src\Sensor\RplidarInterface\RPLidarProxy.cpp" />
+    <ClCompile Include="src\Sensor\RplidarInterface\rplidar_driver.cpp" />
+    <ClCompile Include="src\Sensor\RplidarInterface\thread.cpp" />
+    <ClCompile Include="src\Sensor\RplidarInterface\timer.cpp" />
+    <ClCompile Include="src\Sensor\SensorSupervisor.cpp" />
+    <ClCompile Include="src\Sensor\VirtualSensor\KuVrHokuyoUTM30LXInterface.cpp" />
+    <ClCompile Include="src\Sensor\VirtualSensor\KuVrWheelActuatorInterface.cpp" />
+    <ClCompile Include="src\Sensor\WheelActuatorInterface\PioneerWheelActuatorInterface.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="KUNS.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="KUNS.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

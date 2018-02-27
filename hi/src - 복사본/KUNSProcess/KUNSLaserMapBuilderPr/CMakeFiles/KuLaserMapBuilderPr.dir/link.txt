@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../lib/libKuLaserMapBuilderPr.a  CMakeFiles/KuLaserMapBuilderPr.dir/KuLaserMapBuilderPr.o CMakeFiles/KuLaserMapBuilderPr.dir/KuMapBuilderParameter.o
+/usr/bin/ranlib ../../../lib/libKuLaserMapBuilderPr.a

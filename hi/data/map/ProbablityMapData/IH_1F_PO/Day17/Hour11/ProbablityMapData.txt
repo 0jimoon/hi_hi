@@ -1,0 +1,5 @@
+[PATH]
+DATANUMBER=2
+
+PATH&NAME1=./data/map/ProbablityMapData/IH_1F_PO/Day17/Hour11/Map1.txt
+PATH&NAME2=./data/map/ProbablityMapData/IH_1F_PO/Day17/Hour11/Map2.txt

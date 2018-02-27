@@ -1,0 +1,8 @@
+[MAP]
+MAP_SIZE_X =100
+MAP_SIZE_Y =100
+CELL_SIZE =1000
+
+
+
+

@@ -1,0 +1,17 @@
+[MAP]
+MAP_SIZE_X =100
+MAP_SIZE_Y =100
+CELL_SIZE =1000
+DAYNUMBER =31
+
+
+[PATH]
+PATH&NAME1=./data/map/ProbablityMapData/Day1/Hour1/Map1.txt
+PATH&NAME2=./data/map/ProbablityMapData/Day1/Hour1/Map2.txt
+PATH&NAME3=./data/map/ProbablityMapData/Day1/Hour1/Map3.txt
+PATH&NAME4=./data/map/ProbablityMapData/Day1/Hour1/Map4.txt
+PATH&NAME5=./data/map/ProbablityMapData/Day1/Hour1/Map5.txt
+PATH&NAME6=./data/map/ProbablityMapData/Day1/Hour1/Map6.txt
+PATH&NAME7=./data/map/ProbablityMapData/Day1/Hour1/Map7.txt
+PATH&NAME8=./data/map/ProbablityMapData/Day1/Hour1/Map8.txt
+PATH&NAME9=./data/map/ProbablityMapData/Day1/Hour1/Map9.txt

@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Algorithm">
+      <UniqueIdentifier>{51342268-ddc5-4436-8892-8fb56c364d51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Behavior">
+      <UniqueIdentifier>{83df992c-75fa-4a89-9a3c-9463fcea85a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KUNS">
+      <UniqueIdentifier>{82cecb4d-945f-4f93-a3f9-cda97a865f97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KUNSProcess">
+      <UniqueIdentifier>{d0b32ec4-f679-455e-9327-ef26faa62606}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KUNS\KUNSUtil">
+      <UniqueIdentifier>{1d9a0d9c-f8b8-4aeb-9986-da730ee1f6a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Localizer">
+      <UniqueIdentifier>{f6b8b52b-cb81-4317-aefc-0c14e5906ec0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MobileSupervisor">
+      <UniqueIdentifier>{c1941aa2-87b1-41e2-adff-6ffdf086538b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sensor">
+      <UniqueIdentifier>{0264d917-469a-4705-9f09-1bd663698837}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Behavior\virtual">
+      <UniqueIdentifier>{8c5952d8-dff5-42bf-bbe6-3e12eb83a4f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KUNSProcess\virtual">
+      <UniqueIdentifier>{a059ab9d-7da1-41a9-b099-5a15a1df10b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sensor\virtual">
+      <UniqueIdentifier>{6ad73392-d61a-4fb1-9ef4-f097295628c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KUNSProcess\GlobalPathPlanning">
+      <UniqueIdentifier>{7618026b-d3a7-4f80-9716-5f4d59c2f94c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sensor\Rplidar">
+      <UniqueIdentifier>{8c80d28f-6c29-4780-a58f-c92020798e3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KUNSProcess\VFHS">
+      <UniqueIdentifier>{1f4f6562-accd-4523-957a-40ea750b0f88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KUNSProcess\LocalPathPlanning">
+      <UniqueIdentifier>{f51eb5bf-d643-4cbf-97a4-3c50f11e6bca}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\KUNS.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\KUNS.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ini\KUNS.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="KUNS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Algorithm\KuICP\KuICP.h">
+      <Filter>Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Algorithm\ParticleFilter\LaserBasedParticleFilter.h">
+      <Filter>Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Algorithm\ParticleFilter\Sample.h">
+      <Filter>Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSMath\KuMath.h">
+      <Filter>KUNS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSPose\KuPose.h">
+      <Filter>KUNS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSUtil\KUNSCriticalSection\KuCriticalSection.h">
+      <Filter>KUNS\KUNSUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSUtil\KUNSINIReadWriter\ini.h">
+      <Filter>KUNS\KUNSUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSUtil\KUNSINIReadWriter\KuINIReadWriter.h">
+      <Filter>KUNS\KUNSUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSUtil\KUNSSerialComm\KuSerialComm.h">
+      <Filter>KUNS\KUNSUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSUtil\KUNSSingletone\KuSingletone.h">
+      <Filter>KUNS\KUNSUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSUtil\KUNSStandby\KuStandby.h">
+      <Filter>KUNS\KUNSUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSUtil\KUNSThread\KuThread.h">
+      <Filter>KUNS\KUNSUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSUtil\KUNSTimer\KuTimer.h">
+      <Filter>KUNS\KUNSUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSUtil\KuUtil.h">
+      <Filter>KUNS\KUNSUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Localizer\Localizer.h">
+      <Filter>Localizer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\Sensor.h">
+      <Filter>Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\KinectSensorInterface\KinectSensorInterface.h">
+      <Filter>Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\WheelActuatorInterface\PioneerWheelActuatorInterface.h">
+      <Filter>Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\HokuyoURG04LXInterface\HokuyoURG04LXInterface.h">
+      <Filter>Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\SensorSupervisor.h">
+      <Filter>Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSBehavior\MapBuildingBehavior\MapBuildingBehavior.h">
+      <Filter>Behavior</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSGUI\KuDrawingInfo.h">
+      <Filter>KUNS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSGUI\KUNSUI3DDlg.h">
+      <Filter>KUNS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KuICPLocalizerPr\KuICPLocalizerPr.h">
+      <Filter>KUNSProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KuLaserBasedParticleFilterLocalizerPr\KuLBPFLocalizerPr.h">
+      <Filter>KUNSProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSKanayamaMotionControlPr\KuKanayamaMotionControlPr.h">
+      <Filter>KUNSProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSLaserMapBuilderPr\KuLaserMapBuilderPr.h">
+      <Filter>KUNSProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSLaserMapBuilderPr\KuMapBuilderParameter.h">
+      <Filter>KUNSProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MobileSupervisor\KuCommandMessage.h">
+      <Filter>MobileSupervisor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MobileSupervisor\KuRobotParameter.h">
+      <Filter>MobileSupervisor</Filter>
+    </ClInclude>
+    <ClInclude Include="KUNSDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSMap\KuMap.h">
+      <Filter>KUNS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSMap\KuMapRepository.h">
+      <Filter>KUNS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MobileSupervisor\MobileSupervisor.h">
+      <Filter>MobileSupervisor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSBehavior\GotoGoalBehavior\GotoGoalBehavior.h">
+      <Filter>Behavior</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSDWAMotionControlPr\KuDWAPr.h">
+      <Filter>KUNSProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSBehavior\VirtualBehavior\KuVrKanayaMotionControlBh.h">
+      <Filter>Behavior\virtual</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSWanderingObstaclePr\KuSimulMotionControllerPr.h">
+      <Filter>KUNSProcess\virtual</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSWanderingObstaclePr\KuSimulLocalizer.h">
+      <Filter>KUNSProcess\virtual</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSObstAvoidancePr\KuObstAvoidancePr.h">
+      <Filter>KUNSProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSWanderingObstaclePr\KuWanderingObstaclePr.h">
+      <Filter>KUNSProcess\virtual</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\VirtualSensor\KuVrWheelActuatorInterface.h">
+      <Filter>Sensor\virtual</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MobileSupervisor\KuPOIMapParameter.h">
+      <Filter>MobileSupervisor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSCombiningPOMapPr\KuCombiningPOMapPr.h">
+      <Filter>KUNSProcess\GlobalPathPlanning</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSPathPlannerPr\KuGlobalParhPlannerPr.h">
+      <Filter>KUNSProcess\GlobalPathPlanning</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSPathPlannerPr\KuGradientPathPlannerbasedPOMapPr.h">
+      <Filter>KUNSProcess\GlobalPathPlanning</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSBuildingPOMapPr\KuBuildingPOMapParameter.h">
+      <Filter>KUNSProcess\GlobalPathPlanning</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSBuildingPOMapPr\KuBuildingPOMapPr.h">
+      <Filter>KUNSProcess\GlobalPathPlanning</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KuElevatorPr\KuElevatorPr.h">
+      <Filter>KUNSProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\RplidarInterface\arch\win32\arch_win32.h">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\RplidarInterface\arch\win32\net_serial.h">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\RplidarInterface\arch\win32\timer.h">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\RplidarInterface\arch\win32\winthread.hpp">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\RplidarInterface\hal\abs_rxtx.h">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\RplidarInterface\hal\event.h">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\RplidarInterface\hal\locker.h">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\RplidarInterface\hal\thread.h">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\RplidarInterface\hal\util.h">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\RplidarInterface\net_serial.h">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\RplidarInterface\rplidar.h">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\RplidarInterface\rplidar_cmd.h">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\RplidarInterface\rplidar_driver.h">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\RplidarInterface\rplidar_driver_serial.h">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\RplidarInterface\rplidar_protocol.h">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\RplidarInterface\RPLidarData.h">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\RplidarInterface\RPLidarProxy.h">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\RplidarInterface\rptypes.h">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\RplidarInterface\sdkcommon.h">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\RplidarInterface\RplidarInterface.h">
+      <Filter>Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSPathPlannerPr\KuPathSmoothingPr.h">
+      <Filter>KUNSProcess\GlobalPathPlanning</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSPathPlannerPr\KuGradientPathPlannerPr.h">
+      <Filter>KUNSProcess\GlobalPathPlanning</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSPathPlannerPr\KuGradientPathPlannerbasedSafeLinePr.h">
+      <Filter>KUNSProcess\GlobalPathPlanning</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSWanderingObstaclePr\KuVrRangeInterface.h">
+      <Filter>KUNSProcess\virtual</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSVFHPlusPr\KuVFHPlusPr.h">
+      <Filter>KUNSProcess\VFHS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSVFHPlusPr\LocalMap.h">
+      <Filter>KUNSProcess\VFHS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSVFHPlusPr\mm.h">
+      <Filter>KUNSProcess\VFHS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSVFHPlusPr\VFHPlus.h">
+      <Filter>KUNSProcess\VFHS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\Ctracker.h">
+      <Filter>KUNSProcess\LocalPathPlanning</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\HungarianAlg.h">
+      <Filter>KUNSProcess\LocalPathPlanning</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\Kalman.h">
+      <Filter>KUNSProcess\LocalPathPlanning</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\KuLocalPathPlannerPr.h">
+      <Filter>KUNSProcess\LocalPathPlanning</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sensor\VirtualSensor\KuVrHokuyoUTM30LXInterface.h">
+      <Filter>Sensor\virtual</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\KuTrajectory.h">
+      <Filter>KUNSProcess\LocalPathPlanning</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\KuKalman.h">
+      <Filter>KUNSProcess\LocalPathPlanning</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\KuTracker.h">
+      <Filter>KUNSProcess\LocalPathPlanning</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\KuGradientPathPlannerbasedPIPr.h">
+      <Filter>KUNSProcess\LocalPathPlanning</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="KUNS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Algorithm\KuICP\KuICP.cpp">
+      <Filter>Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Algorithm\ParticleFilter\LaserBasedParticleFilter.cpp">
+      <Filter>Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSMath\KuMath.cpp">
+      <Filter>KUNS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSPose\KuPose.cpp">
+      <Filter>KUNS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSUtil\KUNSCriticalSection\KuCriticalSection.cpp">
+      <Filter>KUNS\KUNSUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSUtil\KUNSINIReadWriter\ini.cpp">
+      <Filter>KUNS\KUNSUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSUtil\KUNSINIReadWriter\KuINIReadWriter.cpp">
+      <Filter>KUNS\KUNSUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSUtil\KUNSSerialComm\KuSerialComm.cpp">
+      <Filter>KUNS\KUNSUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSUtil\KUNSStandby\KuStandby.cpp">
+      <Filter>KUNS\KUNSUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSUtil\KUNSThread\KuThread.cpp">
+      <Filter>KUNS\KUNSUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSUtil\KUNSTimer\KuTimer.cpp">
+      <Filter>KUNS\KUNSUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSUtil\KuUtil.cpp">
+      <Filter>KUNS\KUNSUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sensor\KinectSensorInterface\KinectSensorInterface.cpp">
+      <Filter>Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sensor\WheelActuatorInterface\PioneerWheelActuatorInterface.cpp">
+      <Filter>Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sensor\HokuyoURG04LXInterface\HokuyoURG04LXInterface.cpp">
+      <Filter>Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sensor\SensorSupervisor.cpp">
+      <Filter>Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSBehavior\MapBuildingBehavior\MapBuildingBehavior.cpp">
+      <Filter>Behavior</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSGUI\KuDrawingInfo.cpp">
+      <Filter>KUNS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSGUI\KUNSUI3DDlg.cpp">
+      <Filter>KUNS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KuICPLocalizerPr\KuICPLocalizerPr.cpp">
+      <Filter>KUNSProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KuLaserBasedParticleFilterLocalizerPr\KuLBPFLocalizerPr.cpp">
+      <Filter>KUNSProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSKanayamaMotionControlPr\KuKanayamaMotionControlPr.cpp">
+      <Filter>KUNSProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSLaserMapBuilderPr\KuLaserMapBuilderPr.cpp">
+      <Filter>KUNSProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSLaserMapBuilderPr\KuMapBuilderParameter.cpp">
+      <Filter>KUNSProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MobileSupervisor\KuCommandMessage.cpp">
+      <Filter>MobileSupervisor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MobileSupervisor\KuRobotParameter.cpp">
+      <Filter>MobileSupervisor</Filter>
+    </ClCompile>
+    <ClCompile Include="KUNSDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSMap\KuMap.cpp">
+      <Filter>KUNS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSMap\KuMapRepository.cpp">
+      <Filter>KUNS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MobileSupervisor\MobileSupervisor.cpp">
+      <Filter>MobileSupervisor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSBehavior\GotoGoalBehavior\GotoGoalBehavior.cpp">
+      <Filter>Behavior</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSDWAMotionControlPr\KuDWAPr.cpp">
+      <Filter>KUNSProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSBehavior\VirtualBehavior\KuVrKanayaMotionControlBh.cpp">
+      <Filter>Behavior\virtual</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSWanderingObstaclePr\KuSimulMotionControllerPr.cpp">
+      <Filter>KUNSProcess\virtual</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSWanderingObstaclePr\KuSimulLocalizer.cpp">
+      <Filter>KUNSProcess\virtual</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSObstAvoidancePr\KuObstAvoidancePr.cpp">
+      <Filter>KUNSProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSWanderingObstaclePr\KuWanderingObstaclePr.cpp">
+      <Filter>KUNSProcess\virtual</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sensor\VirtualSensor\KuVrWheelActuatorInterface.cpp">
+      <Filter>Sensor\virtual</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MobileSupervisor\KuPOIMapParameter.cpp">
+      <Filter>MobileSupervisor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSCombiningPOMapPr\KuCombiningPOMapPr.cpp">
+      <Filter>KUNSProcess\GlobalPathPlanning</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSPathPlannerPr\KuGlobalParhPlannerPr.cpp">
+      <Filter>KUNSProcess\GlobalPathPlanning</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSPathPlannerPr\KuGradientPathPlannerbasedPOMapPr.cpp">
+      <Filter>KUNSProcess\GlobalPathPlanning</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSBuildingPOMapPr\KuBuildingPOMapParameter.cpp">
+      <Filter>KUNSProcess\GlobalPathPlanning</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSBuildingPOMapPr\KuBuildingPOMapPr.cpp">
+      <Filter>KUNSProcess\GlobalPathPlanning</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KuElevatorPr\KuElevatorPr.cpp">
+      <Filter>KUNSProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sensor\RplidarInterface\net_serial.cpp">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sensor\RplidarInterface\rplidar_driver.cpp">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sensor\RplidarInterface\RPLidarProxy.cpp">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sensor\RplidarInterface\thread.cpp">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sensor\RplidarInterface\timer.cpp">
+      <Filter>Sensor\Rplidar</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sensor\RplidarInterface\RplidarInterface.cpp">
+      <Filter>Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSPathPlannerPr\KuPathSmoothingPr.cpp">
+      <Filter>KUNSProcess\GlobalPathPlanning</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSPathPlannerPr\KuGradientPathPlannerPr.cpp">
+      <Filter>KUNSProcess\GlobalPathPlanning</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSPathPlannerPr\KuGradientPathPlannerbasedSafeLinePr.cpp">
+      <Filter>KUNSProcess\GlobalPathPlanning</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSWanderingObstaclePr\KuVrRangeInterface.cpp">
+      <Filter>KUNSProcess\virtual</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSVFHPlusPr\KuVFHPlusPr.cpp">
+      <Filter>KUNSProcess\VFHS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSVFHPlusPr\LocalMap.cpp">
+      <Filter>KUNSProcess\VFHS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSVFHPlusPr\VFHPlus.cpp">
+      <Filter>KUNSProcess\VFHS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\Ctracker.cpp">
+      <Filter>KUNSProcess\LocalPathPlanning</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\HungarianAlg.cpp">
+      <Filter>KUNSProcess\LocalPathPlanning</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\Kalman.cpp">
+      <Filter>KUNSProcess\LocalPathPlanning</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\KuLocalPathPlannerPr.cpp">
+      <Filter>KUNSProcess\LocalPathPlanning</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sensor\VirtualSensor\KuVrHokuyoUTM30LXInterface.cpp">
+      <Filter>Sensor\virtual</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\KuKalman.cpp">
+      <Filter>KUNSProcess\LocalPathPlanning</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\KuTracker.cpp">
+      <Filter>KUNSProcess\LocalPathPlanning</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KUNSProcess\KUNSLocalPathPlnnerPr\KuGradientPathPlannerbasedPIPr.cpp">
+      <Filter>KUNSProcess\LocalPathPlanning</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="KUNS.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
